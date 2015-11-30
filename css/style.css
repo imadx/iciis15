@@ -1,0 +1,77 @@
+/* latin */
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Arimo Bold'), local('Arimo-Bold'), url(../fonts/Arimo_700.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+/* latin */
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arimo'), url(../fonts/Arimo_400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+html{
+  margin:0;
+  padding: 0;
+}
+body{
+	font-family: Arimo;
+  margin:0;
+  padding: 0;
+}
+.navbar {
+  background: #368ae8;
+  border-radius: 0;
+  border: none;
+  color: #fff;
+  margin: 0;
+  box-shadow: 0 10px 5px -10px #000;
+  z-index: 1000;
+}
+.navbar-inverse .navbar-brand{
+  color: #ddd;
+}
+.navbar-inverse .navbar-nav>li>a{
+  color: #ddd;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+  background: #fff;
+  color: #368ae8;
+  font-weight: 700;
+  border-bottom: solid #368ae8 4px;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+  background: #fff;
+  color: #368ae8;
+}
+.dropdown-menu>li>a{
+  transition: all .3s;
+  padding:10px 20px;
+}
+.dropdown-menu>li>a:hover{
+  transition: all .1s;
+  background: #368ae8;
+  color: #fff;
+}
+#header{
+  padding: 30px 20px;
+  box-shadow: 0 10px 5px -10px #000;
+  z-index: 3000;
+}
+#footer_sub{
+  color: #fff;
+  background: #2c2e2e;
+  padding: 30px 20px;
+}
+#footer_main{
+  color: #fff;
+  background: #252626;
+  padding: 10px;
+
+}
