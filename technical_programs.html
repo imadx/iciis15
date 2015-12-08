@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>ICIIS 2015</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style id="search_style"></style>
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <div class="container-fluid" id="header">
+      <div class="col-sm-8"><img id="headerLogo_image" src="images/logo.png" alt="" style="height: 80px; padding:0; margin: 0;"></div>
+     </div>
+     <div id="nav-wrapper">
+     <nav id="nav" class="navbar navbar-inverse" role="navigation" data-spy="affix" data-offset-top="140" data-offset-bottom="-200">
+
+       <!-- Brand and toggle get grouped for better mobile display -->
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="#">ICIIS 2015</a>
+       </div>
+     
+       <!-- Collect the nav links, forms, and other content for toggling -->
+       <div class="collapse navbar-collapse navbar-ex1-collapse">
+         <ul class="nav navbar-nav">
+           <li><a href="index.html">Home</a></li>
+           <li class="dropdown">
+             <a href="pre_conference.html" class="dropdown-toggle" data-toggle="dropdown">Pre-conference workshops<b class="caret"></b></a>
+             <ul class="dropdown-menu">
+               <li><a href="pre_conference_details.html">Biomedical Imaging and Instrumentation</a></li>
+               <li><a href="pre_conference_details.html">High Voltage DC (HVDC) Transmission and Power Oscillation Damaping</a></li>
+               <li><a href="pre_conference_details.html">Advanced Telecommuncation Networks and Technologies</a></li>
+               <li><a href="pre_conference_details.html">Tutorial session on "Future Grid with Non-conventional Renewable Energy additions"</a></li>
+             </ul>
+           </li>
+           <li class="active"><a href="technical_programs.html">Technical Programs</a></li>
+           <li><a href="keynote_presentations.html">Keynote Presentations</a></li>
+           <li class="dropdown">
+             <a href="papers.html" class="dropdown-toggle" data-toggle="dropdown">Papers <b class="caret"></b></a>
+             <ul class="dropdown-menu">
+               <li><a href="papers_category.html">Communications and Information Engineering</a></li>
+               <li><a href="papers_category.html">Computers and Embedded Systems</a></li>
+               <li><a href="papers_category.html">Electronics and Instrumentation</a></li>
+               <li><a href="papers_category.html">Image and Signal Processing</a></li>
+               <li><a href="papers_category.html">Power, Energy and High Voltage Engineering</a></li>
+               <li><a href="papers_category.html">Robotics, Control and Automation</a></li>
+             </ul>
+           </li>
+           <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Organizing Committee<b class="caret"></b></a>
+             <ul class="dropdown-menu">
+               <li><a href="committee_organizing.html">Organizing Committee</a></li>
+               <li><a href="committee_technical_program.html">Technical Program Committee</a></li>
+               <li><a href="committee_indust_and_univ_liaison.html">Industrial and University Liaison</a></li>
+               <li><a href="committee_international_advisory_panel.html">International Advisory Panel</a></li>
+             </ul>
+           </li>
+         </ul>
+
+
+
+         <form class="navbar-form navbar-right" role="search">
+           <div class="form-group">
+             <input id="paperSearch" type="text" class="form-control" placeholder="Search papers">
+           </div>
+           <button type="submit" class="btn btn-default"> <span class="glyphicon glyphicon-search"></span> </button>
+         </form>
+       </div><!-- /.navbar-collapse -->
+     </nav>
+     </div><div class="clearfix"></div>
+     </div>
+     <div id="searchDialog" class="container-fluid">
+      <h1>Search Results</h1>
+      <h4><span id="num_results">0</span> result(s) found</h4>
+      <div class="list-group">
+        <a href="#" class="list-group-item searchable" data-index="papertitleloremipsumkeyword1.authorname">
+          <h4 class="list-group-item-heading">Paper Title Lorem ipsum keyword1.</h4>
+          <p class="list-group-item-text">Author name</p>
+        </a>
+        <a href="#" class="list-group-item searchable" data-index="papertitleloremipsumkeyword2.authorname">
+          <h4 class="list-group-item-heading">Paper Title Lorem ipsum keyword2.</h4>
+          <p class="list-group-item-text">Author name</p>
+        </a>
+        <a href="#" class="list-group-item searchable" data-index="papertitleloremipsumkeyword2.authorname">
+          <h4 class="list-group-item-heading">Paper Title Lorem ipsum keyword2.</h4>
+          <p class="list-group-item-text">Author name</p>
+        </a>
+        <a href="#" class="list-group-item searchable" data-index="papertitleloremipsumkeyword3.authorname">
+          <h4 class="list-group-item-heading">Paper Title Lorem ipsum keyword3.</h4>
+          <p class="list-group-item-text">Author name</p>
+        </a>
+        <a href="#" class="list-group-item searchable" data-index="papertitleloremipsumkeyword4.authorname">
+          <h4 class="list-group-item-heading">Paper Title Lorem ipsum keyword4.</h4>
+          <p class="list-group-item-text">Author name</p>
+        </a>
+        <a href="#" class="list-group-item searchable" data-index="papertitleloremipsumkeyword4.authorname">
+          <h4 class="list-group-item-heading">Paper Title Lorem ipsum keyword4.</h4>
+          <p class="list-group-item-text">Author name</p>
+        </a>
+      </div>
+     </div>
+     <div class="container-fluid content_panel">
+       <table align="center">
+          <tbody>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          <strong>Time</strong>
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          <strong>Activity</strong>
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          <strong></strong>
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          <strong>17<sup>th</sup> December 2013</strong>
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          08.00 - 08.30
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Workshop Registration
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          08.30 – 09.00
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Workshop Registration
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          09.00 – 09.30
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Pre-Conference Workshops (WS1/WS2/WS3)
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          09.30 – 10.30
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Pre-Conference Workshops (WS1/WS2/WS3)
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          10.30 – 10.45
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Morning Tea
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          10.45 – 11.45
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Pre-Conference Workshops (WS1/WS2/WS3)
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          11.45 – 13.00
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Lunch
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          13.00 – 14.00
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Pre-Conference Workshops (WS1/WS2/WS3)
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          14.00 – 15.00
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Pre-Conference Workshops (WS1/WS2/WS3)
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          15.00 – 15.15
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Afternoon Tea
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          15.15 – 16.00
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Pre-Conference Workshops (WS1/WS2/WS3)
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          16.00 – 17.00
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Pre-Conference Workshops (WS1/WS2/WS3)
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          17.00 – 18.00
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Pre-Conference Workshops (WS1/WS2/WS3)
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          <strong>18<sup>th</sup> December 2013</strong>
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          08.00 - 08.30
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Conference Registration
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          08.30 – 09.00
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Conference Registration
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          09.00 – 09.30
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Inauguration
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          09.30 – 10.30
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Inauguration
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          10.30 – 10.45
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Morning Tea
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          10.45 – 11.45
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Keynote 1 (Ajith Amarasekara)
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          11.45 – 13.00
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Lunch
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          13.00 – 14.00
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Keynote 2 (Vijaykrishnan Narayanan)
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          14.00 – 15.00
+                      </p>
+                  </td>
+                  <td colspan="2" valign="top">
+                      <p align="center">
+                         <a href="technical_programs_tracks.html" >Session 1 – Track A</a>
+                      </p>
+                  </td>
+                  <td colspan="3" valign="top">
+                      <p align="center">
+                          <a href="technical_programs_tracks.html">Session 1 – Track B</a> 
+                      </p>
+                  </td>
+                  <td colspan="3" valign="top">
+                      <p align="center">
+                          <a href="technical_programs_tracks.html"> Session 1 – Track C</a>
+                      </p>
+                  </td>
+                  <td valign="top">
+                      <p align="center">
+                          <a href="technical_programs_tracks.html">Session 1 – Track D</a>
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          15.00 – 15.15
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Afternoon Tea
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          15.15 – 16.00
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Invited Presentation (Chih-Weh Kuo)
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          16.00 – 17.00
+                      </p>
+                  </td>
+                  <td valign="top">
+                      <p align="center">
+                         <a href="technical_programs_tracks.html" > Session 2 – Track A</a>
+                      </p>
+                  </td>
+                  <td colspan="3" valign="top">
+                      <p align="center">
+                          <a href="technical_programs_tracks.html"> Session 2 – Track B</a>
+                      </p>
+                  </td>
+                  <td colspan="3" valign="top">
+                      <p align="center">
+                          <a href="technical_programs_tracks.html" >Session 2 – Track C</a>
+                      </p>
+                  </td>
+                  <td colspan="2" valign="top">
+                      <p align="center">
+                          <a href="technical_programs_tracks.html" >Session 2 – Track  D</a>
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          17.00 – 18.00
+                      </p>
+                  </td>
+                  <td valign="top">
+                      <p align="center">
+                          <a href="technical_programs_tracks.html" >Session 3 – Track A</a>
+                      </p>
+                  </td>
+                  <td colspan="3" valign="top">
+                      <p align="center">
+                          <a href="technical_programs_tracks.html" >Session 3 – Track B</a>
+                      </p>
+                  </td>
+                  <td colspan="3" valign="top">
+                      <p align="center">
+                          <a href="technical_programs_tracks.html"> Session 3 – Track C</a>
+                      </p>
+                  </td>
+                  <td colspan="2" valign="top">
+                      <p align="center">
+                         <a href="technical_programs_tracks.html" > Session 3 – Track D</a>
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          <strong>19<sup>th</sup> December 2013</strong>
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          08.30 – 09.30
+                      </p>
+                  </td>
+                  <td valign="top">
+                      <p align="center">
+                         <a href="technical_programs_tracks.html"  >Session 4 – Track A</a>
+                      </p>
+                  </td>
+                  <td colspan="3" valign="top">
+                      <p align="center">
+                          <a href="technical_programs_tracks.html" >Session 4 – Track B</a>
+                      </p>
+                  </td>
+                  <td colspan="3" valign="top">
+                      <p align="center">
+                          <a href="technical_programs_tracks.html" >Session 4 – Track C</a>
+                      </p>
+                  </td>
+                  <td colspan="2" valign="top">
+                      <p align="center">
+                          <a href="technical_programs_tracks.html" >Session 4 – Track D</a>
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          09.30 – 10.30
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Keynote 3(Suhada Jayasuriya)
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          10.30 – 10.45
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Morning Tea
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          10.45 – 11.45
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Keynote 4(Chen -Ching Liu)
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          11.45 – 13.00
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Lunch
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          13.00 – 14.00
+                      </p>
+                  </td>
+                  <td colspan="4" valign="top">
+                      <p align="center">
+                          Keynote 5(Neelesh Mehta)
+                      </p>
+                  </td>
+                  <td colspan="5" valign="top">
+                      <p align="center">
+                          Tutorial (T1)
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          14.00 – 15.00
+                      </p>
+                  </td>
+                  <td colspan="4" valign="top">
+                      <p align="center">
+                          Keynote 6 (Brett Nener)
+                      </p>
+                  </td>
+                  <td colspan="5" valign="top">
+                      <p align="center">
+                          Tutorial (T1)
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          15.00 – 15.15
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Afternoon Tea
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          15.15 – 16.15
+                      </p>
+                  </td>
+                  <td valign="top">
+                      <p align="center">
+                         <a href="technical_programs_tracks.html" > Session 5 – Track B</a>
+                      </p>
+                  </td>
+                  <td colspan="3" valign="top">
+                      <p align="center">
+                        <a href="technical_programs_tracks.html" > Session 5 – Track C</a>
+                      </p>
+                  </td>
+                  <td colspan="3" valign="top">
+                      <p align="center">
+                         <a href="technical_programs_tracks.html"  >Session 5 – Track D</a>
+                      </p>
+                  </td>
+                  <td colspan="2" valign="top">
+                      <p align="center">
+                          Tutorial(T1)
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          16.15 – 17.15
+                      </p>
+                  </td>
+                  <td valign="top">
+                      <p align="center">
+                         <a href="technical_programs_tracks.html" > Session 6 – Track B</a>
+                      </p>
+                  </td>
+                  <td colspan="3" valign="top">
+                      <p align="center">
+                         <a href="technical_programs_tracks.html" > Session 6 – Track C</a>
+                      </p>
+                  </td>
+                  <td colspan="3" valign="top">
+                      <p align="center">
+                         <a href="technical_programs_tracks.html" > Session 6 – Track D</a>
+                      </p>
+                  </td>
+                  <td colspan="2" valign="top">
+                      <p align="center">
+                          Tutorial(T1)
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          17.15 – 18.15
+                      </p>
+                  </td>
+                  <td colspan="3" valign="top">
+                      <p align="center">
+                        <a href="technical_programs_tracks.html"  > Session 7 – Track B</a>
+                      </p>
+                  </td>
+                  <td colspan="3" valign="top">
+                      <p align="center">
+                        <a href="technical_programs_tracks.html" >  Session7 – Track C</a>
+                      </p>
+                  </td>
+                  <td colspan="3" valign="top">
+                      <p align="center">
+                        <a href="technical_programs_tracks.html"  > Session 7 – Track D</a>
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          19.00 – 22.00
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Conference Banquet (Thilanka Hotel, Kandy)
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          <strong>20<sup>th</sup> December 2013</strong>
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          08.30 – 09.30
+                      </p>
+                  </td>
+                  <td valign="top">
+                      <p align="center">
+                        <a href="technical_programs_tracks.html"  > Session 8 – Track A</a>
+                      </p>
+                  </td>
+                  <td colspan="3" valign="top">
+                      <p align="center">
+                         <a href="technical_programs_tracks.html" > Session 8 – Track B</a>
+                      </p>
+                  </td>
+                  <td colspan="3" valign="top">
+                      <p align="center">
+                        <a href="technical_programs_tracks.html" >  Session 8 – Track C</a>
+                      </p>
+                  </td>
+                  <td colspan="2" valign="top">
+                      <p align="center">
+                       <a href="technical_programs_tracks.html"   > Session 8 – Track D</a>
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          09.30 – 10.30
+                      </p>
+                  </td>
+                  <td valign="top">
+                      <p align="center">
+                         <a href="technical_programs_tracks.html"  >  Session 9 – Track A</a>
+                      </p>
+                  </td>
+                  <td colspan="3" valign="top">
+                      <p align="center">
+                       <a href="technical_programs_tracks.html"  >  Session 9 – Track B</a>
+                      </p>
+                  </td>
+                  <td colspan="3" valign="top">
+                      <p align="center">
+                        <a href="technical_programs_tracks.html"   >Session 9 – Track C</a>
+                      </p>
+                  </td>
+                  <td colspan="2" valign="top">
+                      <p align="center">
+                        <a href="technical_programs_tracks.html"  > Session 9 – Track D</a>
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          10.30 – 10.45
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Morning Tea
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          10.45 – 11.45
+                      </p>
+                  </td>
+                  <td valign="top">
+                      <p align="center">
+                       <a href="technical_programs_tracks.html"   > Session 10 – Track A</a>
+                      </p>
+                  </td>
+                  <td colspan="3" valign="top">
+                      <p align="center">
+                      <a href="technical_programs_tracks.html"    > Session 10 – Track B</a>
+                      </p>
+                  </td>
+                  <td colspan="3" valign="top">
+                      <p align="center">
+                      <a href="technical_programs_tracks.html"   >  Session 10 – Track C</a>
+                      </p>
+                  </td>
+                  <td colspan="2" valign="top">
+                      <p align="center">
+                      <a href="technical_programs_tracks.html"     >Session 10 – Track D </a>
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          11.45 – 13.00
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Lunch
+                      </p>
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top">
+                      <p align="center">
+                          13.00 – 14.00
+                      </p>
+                  </td>
+                  <td colspan="9" valign="top">
+                      <p align="center">
+                          Closing ceremony
+                      </p>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+
+     </div>
+     <div class="container-fluid small footer"  id="footer_sub">
+       Copyright and Reprint Permission: Abstracting is permitted with credit to the source. Libraries are permitted to photocopy beyond the limit of U.S. copyright law for private use of patrons those articles in this volume that carry a code at the bottom of the first page. provided the per-copy fee indicated in the code is paid through Copyright Clearance Center, 222 Rosewood Drive, Danvers, MA 01923. For other copying, reprint or republication permission, write to IEEE Copyrights Manager. IEEE Operations Center, 445 hoes Lane, Piscataway, NJ 08854. All rights reserved. Copyright 2Ol3 by IEEE.
+     </div>
+     <div class="container-fluid small footer" id="footer_main">
+       <div class="col-sm-4">
+        For the CD- IEEE Catalog Number: CFP1358A-CDR <br>
+        ISBN: 978-1-4799-0909-4
+        </div>
+       <div class="col-sm-8" style="text-align:right;">For technical support contact us <br><span class="glyphicon  glyphicon-envelope"></span> iciis2013@ee.pdn.ac.lk | <span class="glyphicon glyphicon-phone-alt"></span> Fax +94-81-2385772 | <span class="glyphicon glyphicon-earphone"></span>Tel: +94-81- 2393401</div>
+
+     </div>
+    <script type="text/javascript">
+    $('.carousel').carousel({
+      interval: 5000
+    })
+    
+    </script>
+
+    <!-- Search function -->
+    <script type="text/javascript">
+    var searchStyle = document.getElementById('search_style');
+    document.getElementById('paperSearch').addEventListener('input', function() {
+      if (!this.value) {
+        searchStyle.innerHTML = "";
+        return;
+      }
+      $("#searchDialog").show(300);
+      $('html, body').animate({
+        scrollTop: $("#searchDialog").offset().top - 100
+    }, 400);
+      searchStyle.innerHTML = ".searchable:not([data-index*=\"" + this.value.toLowerCase() + "\"]) { display: none; }";
+      // beware of css injections!
+      var search_results_num = $(".searchable[data-index*=\"" + this.value.toLowerCase() + "\"]").length;
+
+      $("#num_results").text(search_results_num);
+    });
+
+    $(document).keyup(function(e) {
+         if (e.keyCode == 27) {
+            $("#searchDialog").slideUp(400);
+            searchStyle.innerHTML = "";
+        }
+        if(document.getElementById('paperSearch').value.length == 0){
+            $("#searchDialog").slideUp(400);
+            searchStyle.innerHTML = "";
+        }
+    });
+    $('#nav-wrapper').height($("#nav").height());
+    $('#nav').affix({
+        offset: $('#nav').position()
+    });
+    </script>
+
+  </body>
+</html>
